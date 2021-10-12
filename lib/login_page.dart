@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class LoginPageState extends StatefulWidget {
+class LoginPage extends StatefulWidget {
   @override
-  _LoginPageStateState createState() => _LoginPageStateState();
+  _LoginPageState createState() => _LoginPageState();
 }
 
-class _LoginPageStateState extends State<LoginPageState> {
+class _LoginPageState extends State<LoginPage> {
   final formKey = new GlobalKey<FormState>();
 
   String email, password;
@@ -13,9 +13,7 @@ class _LoginPageStateState extends State<LoginPageState> {
   //To check fields during submit
   checkFields() {
     final form = formKey.currentState;
-    if (form.validate()) {
-
-    }
+    if (form.validate()) {}
   }
 
   //To validate email
@@ -57,13 +55,13 @@ class _LoginPageStateState extends State<LoginPageState> {
               children: [
                 Text(
                   'Hello',
-                  style: TextStyle(fontFamily: 'Truneo', fontSize: 60.0),
+                  style: TextStyle(fontFamily: 'Trueno', fontSize: 60.0),
                 ),
                 Positioned(
                   top: 50.0,
                   child: Text(
                     'There',
-                    style: TextStyle(fontFamily: 'Truneo', fontSize: 60.0),
+                    style: TextStyle(fontFamily: 'Trueno', fontSize: 60.0),
                   ),
                 ),
                 Positioned(
@@ -81,19 +79,19 @@ class _LoginPageStateState extends State<LoginPageState> {
           ),
           SizedBox(height: 25.0),
           TextFormField(
-            decoration: InputDecoration(
-              labelText: 'EMAIL',
-              labelStyle: TextStyle(
-                fontFamily: 'Trueno',
-                fontSize: 12.0,
-                color: Colors.grey.withOpacity(0.5),
+              decoration: InputDecoration(
+                labelText: 'EMAIL',
+                labelStyle: TextStyle(
+                  fontFamily: 'Trueno',
+                  fontSize: 12.0,
+                  color: Colors.grey.withOpacity(0.5),
+                ),
               ),
-            ),
-            onChanged: (value) {
-              this.email = value; 
-            },
-            validator: (value) => value.isEmpty ? 'Email is required':validateEmail(value)
-          ),
+              onChanged: (value) {
+                this.email = value;
+              },
+              validator: (value) =>
+                  value.isEmpty ? 'Email is required' : validateEmail(value)),
           TextFormField(
               decoration: InputDecoration(
                 labelText: 'PASSWORD',
