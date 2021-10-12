@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "340043295967",
+    "project_id": "ketahuiparkir",
+    "storage_bucket": "ketahuiparkir.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:340043295967:android:7a6aaca8394af5879dcd6a",
+        "android_client_info": {
+          "package_name": "com.example.ketahuiparkir_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "340043295967-6i0j2c8mhtdsjqpbaqn7be20tv9of7pe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ketahuiparkir_flutter",
+            "certificate_hash": "03db57e4deda9cf6eb644f8a09e28846f4e2588b"
+          }
+        },
+        {
+          "client_id": "340043295967-gbbo13e7geper5o6ptejta223anhiobb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC14ttq3UKYJHOjlw2zHUwo-ptnT4mXLbk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "340043295967-gbbo13e7geper5o6ptejta223anhiobb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
