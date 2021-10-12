@@ -143,6 +143,7 @@ class _LoginPageState extends State<LoginPage> {
               height: 50.0,
               child: Material(
                 borderRadius: BorderRadius.circular(25.0),
+                color: Colors.amber,
                 shadowColor: Colors.amberAccent,
                 elevation: 7.0,
                 child: Center(
@@ -156,6 +157,72 @@ class _LoginPageState extends State<LoginPage> {
                 ),
               ),
             ),
+          ),
+          SizedBox(height: 20.0),
+          GestureDetector(
+            onTap: () {
+              // To do
+            },
+            child: Container(
+              height: 50.0,
+              color: Colors.transparent,
+              child: Container(
+                decoration: BoxDecoration(
+                  border: Border.all(
+                      color: Colors.black,
+                      style: BorderStyle.solid,
+                      width: 1.0),
+                  color: Colors.transparent,
+                  borderRadius: BorderRadius.circular(25.0),
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Center(
+                      child: ImageIcon(
+                        AssetImage('assets/facebook.png'),
+                        size: 15.0,
+                      ),
+                    ),
+                    SizedBox(
+                      width: 10.0,
+                    ),
+                    Center(
+                      child: Text(
+                        'Login with Facebook',
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontFamily: 'Trueno',
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          SizedBox(height: 25.0),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text('New to Ketahuiparkir ?'),
+              SizedBox(
+                width: 5.0,
+              ),
+              InkWell(
+                onTap: () {
+                  // To do
+                },
+                child: Text(
+                  'Register',
+                  style: TextStyle(
+                    color: Colors.amberAccent,
+                    fontFamily: 'Trueno',
+                    decoration: TextDecoration.underline,
+                  ),
+                ),
+              )
+            ],
           )
         ],
       ),
