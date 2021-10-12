@@ -13,7 +13,10 @@ class _LoginPageState extends State<LoginPage> {
   //To check fields during submit
   checkFields() {
     final form = formKey.currentState;
-    if (form.validate()) {}
+    if (form.validate()) {
+      form.save();
+      return true;
+    }
   }
 
   //To validate email
@@ -102,11 +105,58 @@ class _LoginPageState extends State<LoginPage> {
                 ),
               ),
               onChanged: (value) {
-                this.email = value;
+                this.password = value;
               },
               obscureText: true,
               validator: (value) =>
                   value.isEmpty ? 'Password is required' : null),
+          SizedBox(
+            height: 5.0,
+          ),
+          GestureDetector(
+            onTap: () {
+              // To do
+            },
+            child: Container(
+              alignment: Alignment(1.0, 0.0),
+              padding: EdgeInsets.only(top: 15.0, left: 20.0),
+              child: InkWell(
+                child: Text(
+                  'Forgot Password',
+                  style: TextStyle(
+                      color: Colors.amberAccent,
+                      fontFamily: 'Trueno',
+                      fontSize: 11.0,
+                      decoration: TextDecoration.underline),
+                ),
+              ),
+            ),
+          ),
+          SizedBox(
+            height: 50.0,
+          ),
+          GestureDetector(
+            onTap: () {
+              // To do
+            },
+            child: Container(
+              height: 50.0,
+              child: Material(
+                borderRadius: BorderRadius.circular(25.0),
+                shadowColor: Colors.amberAccent,
+                elevation: 7.0,
+                child: Center(
+                  child: Text(
+                    'LOGIN',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontFamily: 'Trueno',
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          )
         ],
       ),
     );
