@@ -48,39 +48,14 @@ class _LoginPageState extends State<LoginPage> {
       padding: const EdgeInsets.only(left: 25.0, right: 25.0),
       child: ListView(
         children: [
-          SizedBox(
-            height: 75.0,
-          ),
-          Container(
-            height: 125.0,
-            width: 200.0,
-            child: Stack(
-              children: [
-                Text(
-                  'Hello',
-                  style: TextStyle(fontFamily: 'Trueno', fontSize: 60.0),
-                ),
-                Positioned(
-                  top: 50.0,
-                  child: Text(
-                    'There',
-                    style: TextStyle(fontFamily: 'Trueno', fontSize: 60.0),
-                  ),
-                ),
-                Positioned(
-                  top: 97.0,
-                  left: 175.0,
-                  child: Container(
-                    height: 10.0,
-                    width: 10.0,
-                    decoration: BoxDecoration(
-                        shape: BoxShape.circle, color: Colors.amberAccent),
-                  ),
-                ),
-              ],
+          Padding(
+            padding: const EdgeInsets.only(top: 60.0),
+            child: Center(
+              child: new Image.asset('ketahuiparkirlogo.png',
+                  width: 150, height: 150),
             ),
           ),
-          SizedBox(height: 25.0),
+          SizedBox(height: 50.0),
           TextFormField(
               decoration: InputDecoration(
                 labelText: 'EMAIL',
@@ -178,18 +153,12 @@ class _LoginPageState extends State<LoginPage> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Center(
-                      child: ImageIcon(
-                        AssetImage('assets/facebook.png'),
-                        size: 15.0,
-                      ),
-                    ),
                     SizedBox(
                       width: 10.0,
                     ),
                     Center(
                       child: Text(
-                        'Login with Facebook',
+                        'Guest Account',
                         style: TextStyle(
                           color: Colors.black,
                           fontFamily: 'Trueno',
