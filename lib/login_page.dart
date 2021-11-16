@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ketahuiparkir_flutter/services/authservice.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -112,6 +113,7 @@ class _LoginPageState extends State<LoginPage> {
           ),
           GestureDetector(
             onTap: () {
+              if (checkFields()) AuthService().signIn(email, password, context);
               // To do
             },
             child: Container(
